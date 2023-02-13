@@ -1,12 +1,12 @@
 from flask import Flask, request
 from fastapi.templating import Jinja2Templates
-import requests
+import requests, keys
 
 app = Flask(__name__)
 templates = Jinja2Templates(directory="templates")
 
-account_sid = 'AC97b9370cc504c56bf6c4c7590ba7d533'
-auth_token = '43db9a42bd10eb8ea60a29fd5c1088d8'
+account_sid = keys.account_sid
+auth_token = keys.auth_token
 
 
 @app.route("/")
