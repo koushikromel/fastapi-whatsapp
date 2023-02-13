@@ -1,2 +1,8 @@
+keys.py
+.idea/
+__pycache__
+# for idea folder
 env/
-keys
+*.xml
+*.iml
+*.iws
